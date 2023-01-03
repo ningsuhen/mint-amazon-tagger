@@ -20,13 +20,13 @@ from mintamazontagger.webdriver import (
 logger = logging.getLogger(__name__)
 
 # Login and then go to https://www.amazon.com/gp/b2b/reports
-ORDER_HISTORY_URL_VIA_SWITCH_ACCOUNT_LOGIN = (
-    'https://www.amazon.com/gp/navigation/redirector.html/ref=sign-in-redirect'
-    '?ie=UTF8&associationHandle=usflex&currentPageURL='
-    'https%3A%2F%2Fwww.amazon.com%2Fgp%2Fyourstore%2Fhome%3Fie%3DUTF8%26'
-    'ref_%3Dnav_youraccount_switchacct&pageType=&switchAccount=picker&'
-    'yshURL=https%3A%2F%2Fwww.amazon.com%2Fgp%2Fb2b%2Freports')
-
+# ORDER_HISTORY_URL_VIA_SWITCH_ACCOUNT_LOGIN = (
+#     'https://www.amazon.com/gp/navigation/redirector.html/ref=sign-in-redirect'
+#     '?ie=UTF8&associationHandle=usflex&currentPageURL='
+#     'https%3A%2F%2Fwww.amazon.com%2Fgp%2Fyourstore%2Fhome%3Fie%3DUTF8%26'
+#     'ref_%3Dnav_youraccount_switchacct&pageType=&switchAccount=picker&'
+#     'yshURL=https%3A%2F%2Fwww.amazon.com%2Fgp%2Fb2b%2Freports')
+ORDER_HISTORY_URL_VIA_SWITCH_ACCOUNT_LOGIN = 'https://www.amazon.com/b2b/reports'
 
 class Report:
     def __init__(self, readable_type, type, username, args):
